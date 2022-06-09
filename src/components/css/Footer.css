@@ -1,0 +1,17 @@
+.site-footer {
+  padding: 25px 61px 25px 61px;
+  color: #525252;
+  background-color: #fafafa;
+}
+.social-links {
+  padding: 0 17px 17px 17px;
+}
+.social-links:hover a {
+  color: rgba(0, 0, 0, 0.3);
+}
+.social-links a:hover {
+  color: #292929;
+}
+.fontawesome-icon {
+  font-size: 20px;
+}
