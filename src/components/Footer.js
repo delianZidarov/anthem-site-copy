@@ -4,7 +4,7 @@ import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./css/Footer.css";
 function Footer() {
   return (
-    <footer className="container-fluid fixed-bottom text-center site-footer">
+    <footer className="container-fluid  text-center site-footer">
       <div className="row">
         <div className="col-12">
           <div className="social-links">

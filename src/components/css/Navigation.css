@@ -1,14 +1,16 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
 .navbar-spacing {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 8px 12px;
 }
 .navbar-light .navbar-nav .nav-link {
   padding-top: 0;
   padding-bottom: 0;
   position: relative;
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.55);
 }
 .navbar-light .navbar-nav:hover .nav-link {
@@ -20,21 +22,22 @@
 .navbar-light .navbar-nav .nav-link:hover {
   color: rgba(0, 0, 0, 0.55);
 }
-.navbar-light .navbar-nav .nav-link:hover .nav-link:after {
+.navbar-light .navbar-nav .nav-link:hover.nav-link:after {
   background-color: rgba(0, 0, 0, 0.55);
 }
 .nav-link:after {
   position: absolute;
+  display: none;
   content: "";
-  width: 2px;
+  width: 1px;
   height: 100%;
   right: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.55);
 }
 .navbar-logo {
-  max-width: 140px;
-  max-height: 140px;
+  max-width: 100px;
+  max-height: 100px;
 }
 .app-alert {
   font-size: 12px;
@@ -49,8 +52,23 @@
   background-color: rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 768px) {
+  .site-header {
+    position: static;
+  }
   .navbar-logo {
     max-width: 150px;
     max-height: 150px;
+  }
+  .navbar-spacing {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 12px;
+  }
+  .nav-link:after {
+    display: block;
   }
 }

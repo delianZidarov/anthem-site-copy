@@ -2,7 +2,7 @@ import React from "react";
 import "./css/Navigation.css";
 function Navigation() {
   return (
-    <div className="d-flex flex-column">
+    <header className="d-flex flex-column site-header">
       <div className="alert alert-primary m-0 p-0 alert-dismissible fade show d-flex justify-content-end app-alert order-2 order-md-1" role="alert">
         <span className="m-auto p-2 text-center">USE THE JOE COFFEE APP TO ORFER YOUR BEVERAGES FOR CURBSIDE DELIVERY OR PICK UP.</span>
         <span>
@@ -58,7 +58,7 @@ function Navigation() {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 
