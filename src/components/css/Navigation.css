@@ -1,0 +1,56 @@
+.navbar-spacing {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-light .navbar-nav .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+}
+.navbar-light .navbar-nav:hover .nav-link {
+  color: rgba(0, 0, 0, 0.3);
+}
+.navbar-light .navbar-nav:hover .nav-link:after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.55);
+}
+.navbar-light .navbar-nav .nav-link:hover .nav-link:after {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.nav-link:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.navbar-logo {
+  max-width: 140px;
+  max-height: 140px;
+}
+.app-alert {
+  font-size: 12px;
+  line-height: 14.4px;
+  color: white;
+  background-color: rgb(187, 22, 22);
+  border: none;
+  border-radius: 0;
+}
+.app-alert-btn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 768px) {
+  .navbar-logo {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
