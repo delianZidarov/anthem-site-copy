@@ -1,1 +1,56 @@
+#productCarousel .carousel-inner {
+  height: 45vw;
+}
+.carousel-inner .carousel-item img {
+  height: 45vw;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-item:after {
+  display: block;
+}
+.car-image {
+  position: relative;
+  height: 45vw;
+  overflow: hidden;
+}
+.car-image img {
+  max-height: 45vw;
+  filter: blur(4px);
+}
+.car-image.prev img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.car-image.next {
+  background: transparent;
+}
+.car-image.next img {
+  background: transparent;
+}
+.animateComeIn {
+  animation: comeInRight 0.5s linear;
+  z-index: 1;
+}
+.animateLeave {
+  animation: exitLeft 0.5s linear;
+  z-index: -1;
+}
+@keyframes comeInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes exitLeft {
+  0% {
+    transform: translateX(0%);
+  }
 
+  100% {
+    transform: translateX(-100%);
+  }
+}
